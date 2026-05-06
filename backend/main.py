@@ -1,3 +1,4 @@
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi import FastAPI, Header, Depends
 from database import engine, Base, SessionLocal
 import models
@@ -276,3 +277,11 @@ def get_all_status(user=Depends(get_current_user)):
 
     db.close()
     return result
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
