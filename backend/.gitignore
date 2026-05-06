@@ -1,0 +1,13 @@
+# 🔐 Secrets
+.env
+
+# 🐍 Python
+__pycache__/
+*.pyc
+
+# 🧪 Virtual environment
+venv/
+backend/venv/
+
+# 🖼 Temp files
+*.png
