@@ -18,6 +18,10 @@ Features
         FastAPI backend APIs
         React frontend dashboard
         
+
+
+
+
 Tech Stack
         Frontend
         React.js
